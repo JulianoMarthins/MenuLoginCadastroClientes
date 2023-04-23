@@ -1,0 +1,120 @@
+                                                                        Primeira habilidade que precisa ser dominada para a criação de software
+
+                        Para começar a criar um programa do zero precisamos primeiramente entender exatamente o que é preciso para começar
+            criação do software. Caso você não entendeu o que precisa ser feito, você precisa tentar obter mais informações sobre o precesso
+            de criação, sobre as duvidas de como o cliente deseja que o software seja feito.
+
+                        Após o entendimento completo do que se deve ser feito, o programador deve descrever em formato de texto o que o sistema
+            deve fazer, podendo ser subdividido por tópicos.
+
+
+
+
+                                                                    Primeiro passo exemplo:
+                                              Descreva  o que deve ser feito de forma descritiva
+
+
+            O sistema de login deve permitir que novos usuários sejam cadastrados, e que usuários existentes possam fazer o login.
+            O sistema não deve permitir o usuário duplicados.
+            O sistema deve aletar caso a senha e login não estejam corretos
+
+
+                                                                    Segundo passo, exemplo:
+                                                     Subdivida o programa a ser criado em partes
+
+
+            Como definir o que criar para aquele sistema?
+            Você terá dois caminhos para descrever neste passo dois
+
+            * Para um programa pequeno (Uma semana ou menos) --> Crie um processo para cada funcionalidade, frases que descreve o que deve
+            ser feito.)
+
+            Exemplo: (Básicamente descreve novamente o primeiro passo, neste, já foram identificados os processos que deve ser criados)
+            O sistema de login deve permitir que novos usuários sejam cadastrados, e que usuários existentes possam fazer o login.
+            O sistema não deve permitir o usuário duplicados.
+            O sistema deve aletar caso a senha e login não estejam corretos
+
+            Para finalizar o sistema pequeno, a idéia é de criar os algoritimos de depois transforma-los em código
+
+            * Para um programa maior (Mais de uma semana) --> Para um programa maior, você não deve dividir em processos, mas sim em modulos
+
+            Exemplo:
+
+                    Modulo 01 : Cadastro de usuários
+                    Modulo 02: Login de usuário
+                    Modulo 03: Alertas
+
+            Para cada modulo, torne cada funcionalidade daquele modulo em um processo
+            Frases que descrevam o que deve ser feito naquele modulo
+
+            Exemplo:
+                    Modulo 01 --> Cadastro de usuários {
+                    * Processo 01
+                    * Processo 02
+                    * Processo 03
+                    }
+
+                    Modulo 02 --> Login de usuário {
+                    * Processo 01
+                    * Processo 02
+                    }
+
+                    Modulo 03 --> Alertas {
+                    * Processo 01
+                    }
+
+            A ideia é transformar cada processo em um algorítimo e depois em código
+
+
+
+                                                                    Terceiro passo
+                                                   Crie um algoritmo para cada processo
+
+
+                                          Você deve usar o método dos 5Q's para cada tarefa:
+            1 - Quais são os dados de entrada necessários?
+            2 - O que devo fazer com esses dados?
+            3 - Quais são as restrições deste problema?
+            4 - Qual é o resultado esperado?
+            5 - Qual é a sequencia de passos necessários para chegar ao resultado final?
+
+            Exemplo:
+                    Tarefa 01 --> O sistema de login deve permitir que novos usuários sejam cadastrados (Vamos aplicar os 5q's neste processo)
+
+            1 - Quais são os dados de entrada necessários:
+                    Receber o nome do usuário
+                    Receber a senha do usuário
+
+            2 - O que devo fazer com esses dados:
+                    Eu devo registrar o usuário e senha no meu sistema
+
+            3 - Quais são as restrições deste problema:
+                    O programa não deve permitir duplicidade de usuários no sistema
+
+            4 - Qual é o resultado esperado:
+                    Os novos usuários deve ter seu login e senha salvos no sistema
+
+            5 - Qual é a sequencia de passos necessários para chegar ao resultado final:
+                    * Obter o nome do usuário
+                    * Obter a senha do usuário
+                    * Salvar usuário e sua senha
+                    * Negar duplicidade de usuários
+
+
+                                                                         Quarto passo:
+                                     Transformar o algoritmo que descrevermos acima em código
+            * Obter o nome de usuário
+            * Obter a senha do usuário
+            * Salvar no sistema
+            * Negar duplicidade de usuários
+
+            Exemplo:
+                    usuario = str(input('Digite seu usuário: ')
+                    senha = str(input('Digite sua senha: ')
+
+                    usuarioCadastro.append(usuario)
+                    senhasCadastro.append(senha)
+
+
+                                                                                Quinto passo:
+                              Repita o processo até finalizar todos os processos e ter o programa concluído
